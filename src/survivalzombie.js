@@ -1,5 +1,5 @@
 class Survival{
-    constructor(name, injured = 0, alive = true){
+    constructor(name, injured = 0, alive = true, actions = 3){
         this.name = name;
         this.injured = injured
         if(injured === 2){
@@ -7,7 +7,7 @@ class Survival{
         } else{
         this.alive = alive;
         }
-    
+        this.actions = actions;
 
 }}
 
