@@ -1,6 +1,7 @@
 class Survival{
-    constructor(name){
+    constructor(name, injured = 0 ){
         this.name = name;
+        this.injured = injured
     }
 }
 
