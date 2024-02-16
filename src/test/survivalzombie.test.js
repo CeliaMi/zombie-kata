@@ -19,7 +19,8 @@ describe('Survival', () => {
 
     
     test('Each Survivor can carry up to 5 pieces of Equipment', ()=> {
-        expect(new Survival('juan')).toMatchObject( {"name": "juan",  "injured": 0, "alive": true, "actions": 3, equipment: ["Bate de béisbol", "Sartén", "Katana", "Pistola",
+        expect(new Survival('juan', 0, true, 3 ,["Bate de béisbol", "Sartén", "Katana", "Pistola",
+        "Botella de agua"])).toMatchObject( {"name": "juan",  "injured": 0, "alive": true, "actions": 3, equipment: ["Bate de béisbol", "Sartén", "Katana", "Pistola",
         "Botella de agua"]});
     })
 
