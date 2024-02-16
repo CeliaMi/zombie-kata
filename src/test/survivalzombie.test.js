@@ -1,4 +1,4 @@
-const Survival= require('../survivalzombie')
+const Survival= require('../survival')
 
 describe('Survival', () => {
     test('Every survivor should have a Name', ()=> {
