@@ -1,6 +1,6 @@
 class Survival{
-    constructor(){
-       
+    constructor(name){
+        this.name = name;
     }
 }
 
