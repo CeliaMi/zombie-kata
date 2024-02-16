@@ -8,6 +8,7 @@ class Survival{
         this.alive = alive;
         }
         this.actions = actions;
+        
 
 }}
 

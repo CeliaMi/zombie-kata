@@ -14,9 +14,14 @@ describe('Survival', () => {
     })
 
     test('Each Survivor should start with the ability to perform 3 actions per shift', ()=> {
-        expect(new Survival('juan',)).toMatchObject( {"name": "juan",  "injured": 0, "alive": true, "actions": 3});
+        expect(new Survival('juan')).toMatchObject( {"name": "juan",  "injured": 0, "alive": true, "actions": 3});
     })
 
+    
+    test('Each Survivor can carry up to 5 pieces of Equipment', ()=> {
+        expect(new Survival('juan')).toMatchObject( {"name": "juan",  "injured": 0, "alive": true, "actions": 3, equipment: ["Bate de béisbol", "Sartén", "Katana", "Pistola",
+        "Botella de agua"]});
+    })
 
 })
 
